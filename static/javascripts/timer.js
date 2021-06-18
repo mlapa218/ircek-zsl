@@ -4,3 +4,5 @@ async function timer() {
     await new Promise(r=>setTimeout(r,500))
   }
 }
+
+timer()
