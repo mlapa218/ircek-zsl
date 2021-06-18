@@ -73,9 +73,10 @@ app.post("/register", function (req, res) {
 
 //na komende zmiany koloru
 app.get("/zmienKolor", function (req, res) {
-  console.log(req.session);
+	console.log(req.session.user.kolor)
   req.session.user.kolor =
     "#" + Math.floor(Math.random() * 16777215).toString(16);
+	console.log(req.session.user.kolor)
     //losowanie koloru w hexie
   res.sendStatus(200);
 });
