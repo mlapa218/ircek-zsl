@@ -5,7 +5,8 @@
   width:400px;
   overflow-y:scroll;
   overflow-x:none;
-  heigh:90%;
+  height:90%;
+  max-height:90%;
 }
 .wiadCTN{
   position: absolute;
